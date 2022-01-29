@@ -1,9 +1,6 @@
 import React from 'react';
 import './button.css';
 
-import Foo from '../SomeText/SomeText';
-
-
 interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -41,14 +38,13 @@ export const Button = ({
   return (
     <React.Fragment>
       <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
+        type="button"
+        className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+        style={{ backgroundColor }}
+        {...props}
+      >
       {label}
     </button>
-    <Foo/>
   </React.Fragment>
   );
    
